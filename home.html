@@ -19,6 +19,47 @@
     }
 
 
+    .area {
+  width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+}
+ 
+.tab_class {
+  width: calc(100%/6);
+  height: 50px;
+  background-color: aqua;
+  line-height: 50px;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  order: -1;
+}
+ 
+input[name="tab_name"] {
+  display: none;
+}
+ 
+input:checked + .tab_class {
+  background-color: rgb(96, 189, 192);
+  color: aliceblue;
+}
+ 
+.content_class {
+  display: none;
+  width: 100%;
+}
+ 
+input:checked + .tab_class + .content_class {
+  display: block;
+}
+
+.trial {
+  font-size: 50px;
+  color: crimson;
+}
+
   </style>
 
 
@@ -43,6 +84,74 @@
 
   <br>
   
+  <div class="area">
+    <input type="radio" name="tab_name" id="tab1" checked>
+    <label class="tab_class" for="tab1">講師紹介</label>
+    <div class="content_class">
+      <p>
+        <img src="img/teacher1.png" alt="先生1" width="210" height="280">
+        <br>
+        <img src="img/teacher2.png" alt="先生2" width="210" height="280">
+
+      </p>
+    </div>
+
+
+    <input type="radio" name="tab_name" id="tab2" >
+    <label class="tab_class" for="tab2">教室紹介</label>
+    <div class="content_class">
+      <p>
+        <img src="img/classroom.png" alt="教室1" width="300" height="300"><br>
+        <img src="img/classroom2.png" alt="教室2" width="300" height="300"><br>
+      
+      </p>
+      </div>
+
+
+    <input type="radio" name="tab_name" id="tab3" >
+    <label class="tab_class" for="tab3">アクセス</label>
+    <div class="content_class">
+      <p>
+        <img src="img/map.png" alt="地図" width="400" height="400"><br>
+
+        東京都沖ノ鳥島1－1 <br>
+        竹芝桟橋からフェリーで25時間<br>
+      </p>
+    </div>
+
+
+    <input type="radio" name="tab_name" id="tab4" >
+    <label class="tab_class" for="tab4">体験入学</label>
+    <div class="content_class">
+      <p>
+        <div class="trial">
+        体験入学好評受付中！！
+        </div>
+      </p>
+    </div>
+
+
+    <input type="radio" name="tab_name" id="tab5" >
+    <label class="tab_class" for="tab5">受講料ご案内</label>
+    <div class="content_class">
+      <p>
+        準備中　
+      </p>
+    </div>
+
+
+    <input type="radio" name="tab_name" id="tab6" >
+    <label class="tab_class" for="tab6">お問い合わせ</label>
+    <div class="content_class">
+      <p>
+        準備中
+      </p>
+    </div>
+  </div>
+
+
+
+  <!-- とりあえず横並びを作った時の名残
 
   <ul>
     <li>講師紹介</li>
@@ -52,6 +161,9 @@
     <li>受講料ご案内</li>
     <li>お問い合わせ</li>
   </ul>
+-->
+
+  <br><br><br><br><br>
 
 
 </body>
