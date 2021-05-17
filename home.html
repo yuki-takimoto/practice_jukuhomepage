@@ -1,148 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>北進ハイスクール</title>
   <style>
-    ul{
-      text-align:center;
+    ul {
+      text-align: center;
     }
-
 
     li {
       display: inline-block;
-      background:aqua;
+      background: aqua;
       width: 150px;
       font-size: 20px;
     }
 
-
     .area {
-  width: 1000px;
-  margin: auto;
-  flex-wrap: wrap;
-  display: flex;
-}
- 
-.tab_class {
-  width: calc(100%/6);
-  height: 50px;
-  background-color: aqua;
-  line-height: 50px;
-  font-size: 18px;
-  text-align: center;
-  display: block;
-  order: -1;
-}
- 
-input[name="tab_name"] {
-  display: none;
-}
- 
-input:checked + .tab_class {
-  background-color: rgb(96, 189, 192);
-  color: aliceblue;
-}
- 
-.content_class {
-  display: none;
-  width: 100%;
-}
- 
-input:checked + .tab_class + .content_class {
-  display: block;
-}
+      width: 1000px;
+      margin: auto;
+      flex-wrap: wrap;
+      display: flex;
+    }
 
-.trial {
-  font-size: 50px;
-  color: crimson;
-}
+    .tab_class {
+      width: calc(100%/6);
+      height: 50px;
+      background-color: aqua;
+      line-height: 50px;
+      font-size: 18px;
+      text-align: center;
+      display: block;
+      order: -1;
+    }
 
+    input[name="tab_name"] {
+      display: none;
+    }
+
+    input:checked+.tab_class {
+      background-color: rgb(96, 189, 192);
+      color: aliceblue;
+    }
+
+    .content_class {
+      display: none;
+      width: 100%;
+    }
+
+    input:checked+.tab_class+.content_class {
+      display: block;
+    }
+
+    .trial {
+      font-size: 50px;
+      color: crimson;
+    }
   </style>
-
-
-
 </head>
-
 
 <body bgcolor="ivory">
   <h1>北進ハイスクール</h1>
 
   <div align="center">
-  <img src="img/head_juku.png" alt="イメージ画像" width="1200" height="300" display: block;>
+    <img src="img/head_juku.png" alt="イメージ画像" width="1200" height="300" display: block;>
   </div>
 
   <br>
   <div align="center">
-  <a href="https://www.yahoo.co.jp/"><img src="img/sgakusei.png" alt="小学生" border="2" width="300" height="200" display: block;></a>
-  <a href="https://www.yahoo.co.jp/"><img src="img/tgakusei.png" alt="中学生" border="2" width="300" height="200" display: block;></a>
-  <a href="https://www.yahoo.co.jp/"><img src="img/kgakusei.png" alt="高校生" border="2" width="300" height="200" display: block;></a>
+    <a href="https://www.yahoo.co.jp/"><img src="img/sgakusei.png" alt="小学生" border="2" width="300" height="200"
+        display: block;></a>
+    <a href="https://www.yahoo.co.jp/"><img src="img/tgakusei.png" alt="中学生" border="2" width="300" height="200"
+        display: block;></a>
+    <a href="https://www.yahoo.co.jp/"><img src="img/kgakusei.png" alt="高校生" border="2" width="300" height="200"
+        display: block;></a>
   </div>
-
-
   <br>
-  
   <div class="area">
     <input type="radio" name="tab_name" id="tab1" checked>
     <label class="tab_class" for="tab1">講師紹介</label>
     <div class="content_class">
       <p>
-        <img src="img/teacher1.png" alt="先生1" width="210" height="280">aaa
-        <div class="teacher">佐藤先生<br>あああああああああ</div>
-
-<br><br>
+        <img src="img/teacher1.png" alt="先生1" width="210" height="280"><br><br><br>
+        <div class="teacher">佐藤先生<br>担当：数学、理科</div>
+        <br><br>
         <img src="img/teacher2.png" alt="先生2" width="210" height="280">
-
       </p>
     </div>
 
-
-    <input type="radio" name="tab_name" id="tab2" >
+    <input type="radio" name="tab_name" id="tab2">
     <label class="tab_class" for="tab2">教室紹介</label>
     <div class="content_class">
       <p>
         <img src="img/classroom.png" alt="教室1" width="300" height="300"><br>
         <img src="img/classroom2.png" alt="教室2" width="300" height="300"><br>
-      
       </p>
-      </div>
+    </div>
 
-
-    <input type="radio" name="tab_name" id="tab3" >
+    <input type="radio" name="tab_name" id="tab3">
     <label class="tab_class" for="tab3">アクセス</label>
     <div class="content_class">
       <p>
         <img src="img/map.png" alt="地図" width="400" height="400"><br>
-
         東京都沖ノ鳥島1－1 <br>
         竹芝桟橋からフェリーで25時間<br>
       </p>
     </div>
 
-
-    <input type="radio" name="tab_name" id="tab4" >
+    <input type="radio" name="tab_name" id="tab4">
     <label class="tab_class" for="tab4">体験入学</label>
     <div class="content_class">
       <p>
         <div class="trial">
-        体験入学好評受付中！！
+          体験入学好評受付中！！
         </div>
       </p>
     </div>
 
-
-    <input type="radio" name="tab_name" id="tab5" >
+    <input type="radio" name="tab_name" id="tab5">
     <label class="tab_class" for="tab5">受講料ご案内</label>
     <div class="content_class">
       <p>
-        準備中　
+        準備中
       </p>
     </div>
 
-
-    <input type="radio" name="tab_name" id="tab6" >
+    <input type="radio" name="tab_name" id="tab6">
     <label class="tab_class" for="tab6">お問い合わせ</label>
     <div class="content_class">
       <p>
@@ -150,39 +135,17 @@ input:checked + .tab_class + .content_class {
         <form action="#">
           <label for="name">お名前</label><br>
           <input type="text" name="" id="name"><br><br>
-
           <label for="email">メールアドレス</label><br>
           <input type="email" name="" id="email"><br><br>
-
           <label for="message">お問い合わせ内容</label><br>
           <textarea name="" id="" cols="30" rows="10"></textarea><br><br>
-
           <input type="submit" class="button" value="送信">
-
-
-
-          
         </form>
       </p>
     </div>
   </div>
 
-
-
-  <!-- とりあえず横並びを作った時の名残
-
-  <ul>
-    <li>講師紹介</li>
-    <li>教室紹介</li>
-    <li>アクセス</li>
-    <li>体験入学</li>
-    <li>受講料ご案内</li>
-    <li>お問い合わせ</li>
-  </ul>
--->
-
   <br><br><br><br><br>
-
-
 </body>
+
 </html>
